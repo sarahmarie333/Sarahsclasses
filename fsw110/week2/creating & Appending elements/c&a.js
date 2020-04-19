@@ -6,7 +6,7 @@
   var textnode = document.createTextNode("Tea");
   node.appendChild(textnode);
   document.getElementById("myList").appendChild(node);
-
+  
   var h = document.createElement("H1");                
   var t = document.createTextNode("Welcome to my JS Site");     
   h.appendChild(t); 
