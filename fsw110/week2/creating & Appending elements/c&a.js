@@ -12,3 +12,6 @@
   h.appendChild(t); 
   document.getElementById("H1").appendChild(h);
 
+  var para = document.createElement("P");                       
+  var t = document.createTextNode("All of this was created with Javascript.");     
+  para.appendChild(t);                                         
