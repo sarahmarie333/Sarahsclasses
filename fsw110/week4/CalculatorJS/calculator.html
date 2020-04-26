@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script language=javascript src="calculator.js"></script>
+</head>
+<body onLoad="initialize()">
+    <h2>Simple Calculator</h2>
+    
+    <ol>
+        <li>Place number in the first box.</li>
+        <li>Place number in the second box.</li>
+        <li>Click answer button.</li>
+    </ol>
+    <br>
+    You can also change the operation from the dropdown box.
+    <form name="calc" action="post">
+    <input type=text name=val1 size=10>
+    
+    <select name=operator>
+    <option value=plus>+
+    <option value=minus>-
+    <option value=divide>/
+    <option value=multiply>*
+    </select>
+    
+    <input type=text name=val2 size=10>
+    =
+    <input type=text name=answer size=10>
+    <input type=button value=answer onClick="calculate()">
+    </form>
+    
+    <br><br>
+    
+    
+    </body>
+    </html>
