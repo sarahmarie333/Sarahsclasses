@@ -9,29 +9,37 @@
 <body onLoad="initialize()">
     <h2>Simple Calculator</h2>
     
+    <div id="mydiv1">
     <ol>
         <li>Place number in the first box.</li>
         <li>Place number in the second box.</li>
         <li>Click answer button.</li>
     </ol>
+    </div>
     <br>
     You can also change the operation from the dropdown box.
+    
+    <div id="mydiv2">
     <form name="calc" action="post">
     <input type=text name=val1 size=10>
-    
+    </div>
+
+     <div id="mydiv3">
     <select name=operator>
     <option value=plus>+
     <option value=minus>-
     <option value=divide>/
     <option value=multiply>*
     </select>
+    </div>
     
+    <div id="mydiv4">
     <input type=text name=val2 size=10>
     =
     <input type=text name=answer size=10>
     <input type=button value=answer onClick="calculate()">
     </form>
-    
+    </div>
     <br><br>
     
     

@@ -19,3 +19,10 @@ function calculate(){
     if (multiply.selected)
         document.calc.answer.value = a * b  
 }
+
+function myFunction() {
+    document.getElementById("mydiv1").style.color = "#ff0000";
+    document.getElementById("mydiv2").style.color = "magenta";
+    document.getElementById("mydiv3").style.color = "blue";
+    document.getElementById("mydiv4").style.color = "lightblue";
+  }
