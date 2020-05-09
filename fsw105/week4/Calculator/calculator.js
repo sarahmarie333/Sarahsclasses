@@ -1,80 +1,30 @@
-const readline = require("readline-sync");
-
-function add( num1, num2){
-    
-    return num1+ num2
-
+var readlineSync = require('readline-sync');
+function addTwoNumbers(num1,num2){
+    var sum = num1 + num2;
+    console.log("the result is", sum)
 }
-
-console.log( add( 3, 4))
-
-function subtract( num1, num2){
-    
-    return num1 - num2
-
+function timesTwoNumbers(num1,num2){
+    var multiply = num1 * num2;
+    console.log("the result is", multiply)
 }
-
-console.log( subtract( 3, 4))
-
-function multiply( num1, num2){
-    return num1 * num2 
+function divideTwoNumbers(num1,num2){
+    var divide = num1 / num2;
+    console.log("the result is", divide)
 }
-    
-console.log ( multiply( 9, 5))
-
-function divide( num1, num2){
-    return num1 / num2 
+function subtractTwoNumbers(num1,num2){
+    var substract = num1 - num2;
+    console.log("the result is", substract)
 }
-
-console.log ( divide( 9, 1))
-
-var op = readline.question("Do an operation: add, sub, mul, div")
-
-var num1 = readline.question("Give me a number")
-var num2 = readline.question("Give me another number")
-
-if(op == "add"){
-	console.log( add(num1, num2) )
-}
-
-function add(a , b){
-	a = parseInt(a)
-	b = parseInt(b)
-	return a + b
-}
-
-if(op == "sub"){
-	console.log( subtract(num1, num2) )
-}
-
-function subtract(a , b){
-	a = parseInt(a)
-	b = parseInt(b)
-	return a - b
-}
-
-if(op == "mul"){
-	console.log( multiply(num1, num2) )
-}
-
-function multiply(a , b){
-	a = parseInt(a)
-	b = parseInt(b)
-	return a * b
-}
-
-if(op == "div"){
-    console.log( divide(num1, num2) )
-}
-
-function divide(a , b){
-	a = parseInt(a)
-	b = parseInt(b)
-	return a / b
-}
-
-
-function startCalculator(){
-	//whole calulator thing
-	startCalculator()
-}
+var num1 = readlineSync.questionInt('May I have your first number? ');
+console.log(num1);
+var num2 = readlineSync.questionInt("May i have your second number? ");
+console.log(num2)
+var chooseWhatYouWant = readlineSync.question("what would you like to do here?/ add, sub, mult, div? ")
+if(chooseWhatYouWant === "add"){
+    addTwoNumbers(num1,num2)
+}else if(chooseWhatYouWant === "mult"){
+    timesTwoNumbers(num1,num2)
+}else if(chooseWhatYouWant === "div"){
+    divideTwoNumbers(num1,num2)
+}else(chooseWhatYouWant === "sub")
+    subtractTwoNumbers(num1,num2)
